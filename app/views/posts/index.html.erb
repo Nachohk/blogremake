@@ -1,6 +1,14 @@
-<h1>Posts</h1>
+<h1 class="text-center">Posts</h1>
 
-<table>
+<table class="table">
+<thead>
+    <tr>
+      <th scope="col">Disco</th>
+      <th scope="col">Fecha</th>
+      <th scope="col">Caratula</th>
+      <th scope="col">Descripción</th>
+    </tr>
+  </thead>
     <% @posts.each do |post| %>
     <tr>
         <td><%=post.title%></td>
